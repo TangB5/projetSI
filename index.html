@@ -5,10 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- voici le code html de notre page d acceuil -->
-    <h1>WELCOM to the frontend developpment</h1>
-    <span>les teacher du net je vous saluot</span>
+    <header>
+        
+         <b class="logo">FSA</b>
+
+        <nav>
+        <label for="nav-mob" class="nav-mob"> &#9776; </label> 
+        <input type="checkbox" id="nav-mob">
+         <ul> 
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Dossier</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+        </ul>
+    </nav>
+        </header>
+    <section>
+<h1>DEPARTEMENT MATHS/INFOS</h1>
+<fieldset>
+    <legend>VOS INFOS</legend>
+    <div>
+    <form action="" method="post">
+<label for="matricule" value="matricule">MATRICULE :</label>
+<input type="text" id="matricule" required="required"><br /><br />
+
+<label for="nom" value="nom">NOM :</label>
+<input type="text" id="nom" required="required"><br /><br />
+
+<label for="prenom" value="prenom">PRENOM :</label>
+<input type="text" id="prenom" required="required"><br /><br />
+
+<label for="email" value="email">E-MAIL :</label>
+<input type="email" id="email" required="required"><br /><br />
+
+<label for="numero" value="numero">NUMERO :</label>
+<input type="number" id="numero" required="required"><br /><br />
+
+<label for="fonction" value="fonction">FONCTION :</label>
+<input type="fonctio" id="fonction" required="required"><br /><br />
+
+DEPARTEMENT :<select name="fonction" id="">
+    <option value="">
+        MATHEMATIQUE
+    </option>
+    <option value="">
+        INFORMATIQUE
+    </option>
+</select><br /><br />
+
+<div class="btn">
+<input type="submit" value="ENVOYER" class="btnENVOI">
+<input type="reset" value="ANNULER" class="btnANNUL">
+</div>
+
+    </form>
+</div>
+
+</fieldset>
+
+    </section>
+    <footer>
+        <p>&copy; 2023 - All right reserved</p>
+    </footer>
 </body>
 </html>
