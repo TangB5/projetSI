@@ -18,7 +18,8 @@ STYLE GENERALE
     src: url(police/Bungee.ttf);
  }
 body{
-    background-color: #fefeff;
+    background:url(archive\ \(3\).jpg) no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -98,7 +99,7 @@ STYLE SECTION
 section h1{
     margin-left:490px ;
     margin-top: 50px;
-    color:rgb(2, 4, 46) ;
+    color:rgb(245, 245, 248) ;
     transition:margin-left 2s ;
 }
 /************fielset de la section***********/
@@ -106,14 +107,14 @@ section h1{
 section fieldset{
     width: 600px;
     height: 400px;
-    background-color: hsla(231, 6%, 50%, 0.678);  
+    background-color: hsla(231, 9%, 71%, 0.678);  
     border-radius: 25px;
     box-shadow:1px 1px 10px black; 
     margin-top:30px;
     margin-left: 380px;
     margin-bottom:50px;
     transition: box-shadow 2s, width 2s , margin-left 2s;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     z-index: 2;
 }
 section fieldset:hover{
