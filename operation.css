@@ -8,12 +8,10 @@ STYLE GENERALE
     margin: 0px;
     padding: 0px;
 }
-
 @font-face {
     font-family: 'Nosifer';
     src: url(police/Nosifer.ttf);
 }
-
 @font-face {
     font-family: 'chakra';
     src: url(police/Chakra.ttf);
@@ -105,7 +103,14 @@ STYLE SECTION
 section h1{
     margin-left:490px ;
     margin-top: 50px;
-    font-family: 'Nosifer',sans-serif;
+    color:rgb(3, 8, 92) ;
+    font-family: 'Nosifer', sans-serif;
+    transition:margin-left 2s ;
+}
+section h2{
+    margin-left:600px ;
+    margin-top: 50px;
+    font-family: 'Nosifer', sans-serif;
     color:rgb(3, 8, 92) ;
     transition:margin-left 2s ;
 }
@@ -142,13 +147,14 @@ section form{
     margin-left:15px;
     margin-top:30px;
 }
-section select , input{
+section  input{
     font-family: 'chakra';
 
 }
 section .btn{
-    text-align: right;
-    margin-right:25px;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
     
 }
 section .btn input{
@@ -192,6 +198,9 @@ STYLE RESPONSIVE TABLETTE
      /************fieldset de la section***********/
      section h1{
         margin-left:300px;
+    }
+    section h2{
+        margin-left:400px;
     }
     section fieldset{
         margin-left: 200px;
@@ -244,7 +253,10 @@ STYLE REPONSIVE SMART PHONE
     }
     /************fieldset de la section***********/
     section h1{
-        margin-left:10px;
+        margin-left:120px;
+    }
+    section h2{
+        margin-left:140px;
     }
     section fieldset{
         width:400px;
