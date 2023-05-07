@@ -97,15 +97,14 @@ STYLE SECTION
 ************************************/
 
 section h1{
-    margin-left:490px ;
+    margin-left:30%;
     margin-top: 50px;
     font-family: 'Nosifer', sans-serif;
     color:rgb(3, 8, 92) ;
     transition:margin-left 2s ;
 }
 section h2{
-    margin-left:600px ;
-    margin-top: 50px;
+    margin-left:35%;
     font-family: 'Nosifer', sans-serif;
     color:rgb(3, 8, 92) ;
     transition:margin-left 2s ;
@@ -119,15 +118,18 @@ section .content{
     backdrop-filter: blur(15px);
     border-radius: 25px;
     transition:margin-left 2s ,width 2s ,height 2s;
+    background-color: aqua;
 }
 section .text{
     height: 300px;
-    width: 800px;
-    padding: 25px;
+    width:80%;
+    padding: 10%; 
+
     font-size: large;
     font-family: 'chakra';
-    margin-left: 50px;
+
     transition:width 2s ,height 2s,font-size 2s , padding 2s; 
+    text-align: justify;
 }
 section .image{
      margin-left: 200px;
@@ -178,19 +180,19 @@ STYLE RESPONSIVE TABLETTE
     }
     /*********div de sensibilisation*******/
     section .content{
-        margin-left:200px; 
-       width: 600px;
-       height:610px;
+        margin-left:25%; 
+       width: 500px;
+       height:630px;
    }
    section .text{
        height: 300px;
        width: 400px;
-       padding: 15px;
+       /* padding: 15px; */
        font-size: 0.9em;
-       margin-left: 80px;
+       margin-left:9%;
    }
    section .image{
-        margin-left: 190px;
+        margin-left:25%;
         padding:15px;
        
    }
@@ -247,26 +249,29 @@ STYLE REPONSIVE SMART PHONE
     }
     /************titre h1 de la section***********/
     section h1{
-        margin-left:10px;
+        margin-left:10%;
+        margin-top:10%;
     }
     section h2{
-        margin-left:120px;
+        margin-left:1%;
+        padding-bottom:5%;
     }
 
     section .content{
-        height:600px ;
-        width: 420px;
-        margin-left: 50px;
+        height:800px ;
+        width: 300px;
+        margin-left:3%;
     }
     section .text{
-        height: 300px;
-        width: 400px;
+        /* height: 500px; */
+        width: 250px;
         padding: 15px;
         font-size: small;
-        margin-left: 2px;
+        margin-left:2%;
+        text-align: justify;
     }
     section .image{
-         margin-left: 60px;
+         margin-left:13%;
          padding:15px;
         
     }

@@ -103,10 +103,10 @@ nav .active{
 STYLE SECTION 
 ************************************/
 section h1{
-    margin-left:490px ;
     margin-top: 50px;
     font-family: 'Nosifer',sans-serif;
     color:rgb(3, 8, 92) ;
+    margin-left:30%;
     transition:margin-left 2s ;
 }
 /************fielset de la section***********/
@@ -118,7 +118,7 @@ section fieldset{
     border-radius: 25px;
     box-shadow:1px 1px 10px black; 
     margin-top:30px;
-    margin-left: 380px;
+    margin-left:25%;
     margin-bottom:50px;
     transition: box-shadow 2s, width 2s , margin-left 2s;
     backdrop-filter: blur(15px);
@@ -194,7 +194,7 @@ STYLE RESPONSIVE TABLETTE
         margin-left:300px;
     }
     section fieldset{
-        margin-left: 200px;
+        margin-left:25%;
         margin-top:30px; 
     }
 }
@@ -244,11 +244,11 @@ STYLE REPONSIVE SMART PHONE
     }
     /************fieldset de la section***********/
     section h1{
-        margin-left:10px;
+        margin-left:9%;
     }
     section fieldset{
-        width:400px;
-        margin-left: 50px;
+        width:300px;
+        margin-left: 3%;
         margin-top: 30px; 
     }
         }

@@ -101,15 +101,15 @@ nav .active{
 STYLE SECTION 
 ************************************/
 section h1{
-    margin-left:490px ;
+    margin-left:30% ;
     margin-top: 50px;
     color:rgb(3, 8, 92) ;
     font-family: 'Nosifer', sans-serif;
     transition:margin-left 2s ;
 }
 section h2{
-    margin-left:600px ;
-    margin-top: 50px;
+    margin-left:40% ;
+    /* margin-top: 50px; */
     font-family: 'Nosifer', sans-serif;
     color:rgb(3, 8, 92) ;
     transition:margin-left 2s ;
@@ -117,13 +117,13 @@ section h2{
 /************fielset de la section***********/
 
 section fieldset{
-    width: 600px;
+    width: 500px;
     height: 400px;
     background-color: hsla(231, 9%, 71%, 0.678);  
     border-radius: 25px;
     box-shadow:1px 1px 10px black; 
     margin-top:30px;
-    margin-left: 380px;
+    margin-left: 30%;
     margin-bottom:50px;
     transition: box-shadow 2s, width 2s , margin-left 2s;
     backdrop-filter: blur(15px);
@@ -149,13 +149,14 @@ section form{
 }
 section  input{
     font-family: 'chakra';
+    transition: width 2s;
 
 }
 section .btn{
-    position: absolute;
-    bottom: 10px;
-    right: 25px;
     
+    margin-top:15%;
+    margin-left: 55%; 
+    transition: margin-left 2s ,margin-top 2s ;
 }
 section .btn input{
     padding: 10px;
@@ -163,6 +164,8 @@ section .btn input{
     color: white;
     margin-right:10px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: width 2s ,padding 2s ,height 2s;
 }
 
 
@@ -197,13 +200,13 @@ STYLE RESPONSIVE TABLETTE
     }
      /************fieldset de la section***********/
      section h1{
-        margin-left:300px;
+        margin-left:25%;
     }
     section h2{
         margin-left:400px;
     }
     section fieldset{
-        margin-left: 200px;
+        margin-left: 25%;
         margin-top:30px; 
     }
 }
@@ -253,15 +256,32 @@ STYLE REPONSIVE SMART PHONE
     }
     /************fieldset de la section***********/
     section h1{
-        margin-left:120px;
+        margin-left:10%;
     }
     section h2{
-        margin-left:140px;
+        margin-left:20%;
     }
     section fieldset{
-        width:400px;
-        margin-left: 50px;
+        width:300px;
+        height:400px;
+        margin-left: 3%;
         margin-top: 30px; 
     }
+    section  input{
+        width: 40%;
+    
+    }
+      section .btn{
+        
+        margin-top:35%;
+        margin-left:35%;
+
+        
+    } 
+    section .btn input{
+        padding: 5px;
+        width: 80px;
+        height:30px;
+    } 
         }
  
