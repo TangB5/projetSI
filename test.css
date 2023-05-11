@@ -1,3 +1,46 @@
+<<<<<<< HEAD
 body{
     background-color: cyan;
 }
+=======
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the dropdown content when the dropdown button is clicked */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add a border to the dropdown if needed */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+>>>>>>> c47f5fa (modification de l application pour ajoute l option ajouter et consulter)

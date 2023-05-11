@@ -19,9 +19,15 @@
        <label for="nav-mob" class="nav-mob"> &#9776; </label> 
        <input type="checkbox" id="nav-mob">
         <ul> 
-           <li><a href="index.html" >Accueil</a></li>
-           <li><a href="#" class="active">Dossier</a></li>
-           <li><a href="operation.html">Operation</a></li>
+           <li><a href="accueil.html" >Accueil</a></li>
+           <li><a href="" class="active"><div class="dropdown">
+            Operations
+            <div class="dropdown-content">
+              <a href="operation.html">ajouter un item</a>
+              <a href="dossier.html" class="active">consulter</a>
+            </div>
+          </div>
+      </a></li>
            <li><a href="propos.html">A propos</a></li>
        </ul>
    </nav>

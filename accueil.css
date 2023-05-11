@@ -5,10 +5,12 @@ STYLE GENERALE
     margin: 0px;
     padding: 0px;
 }
+
 @font-face {
     font-family: 'Nosifer';
     src: url(police/Nosifer.ttf);
 }
+
 @font-face {
     font-family: 'chakra';
     src: url(police/Chakra.ttf);
@@ -89,9 +91,7 @@ nav .active{
     display: block;
   position: relative;
 
-} 
-
-
+}  
 
 
 /* Style the dropdown content */
@@ -121,54 +121,81 @@ nav .active{
 
 
 
+
+
+
+
 /********************************* 
 STYLE SECTION 
 ************************************/
-
 section h1{
-    margin-left:30%;
     margin-top: 50px;
-    font-family: 'Nosifer', sans-serif;
+    font-family: 'Nosifer',sans-serif;
     color:rgb(3, 8, 92) ;
+    margin-left:30%;
     transition:margin-left 2s ;
 }
-section h2{
-    margin-left:35%;
-    font-family: 'Nosifer', sans-serif;
-    color:rgb(3, 8, 92) ;
-    transition:margin-left 2s ;
-}
+/************fielset de la section***********/
 
-section .content{
-    box-shadow: 1px 1px 5px black;
-    height: 900px;
-    width: 900px;
-    margin-left:250px;
-    backdrop-filter: blur(15px);
+section fieldset{
+    width: 600px;
+    height: 400px;
+    background-color: hsla(231, 9%, 71%, 0.678);  
     border-radius: 25px;
-    transition:margin-left 2s ,width 2s ,height 2s;
-    background-color: aqua;
+    box-shadow:1px 1px 10px black; 
+    margin-top:30px;
+    margin-left:25%;
+    margin-bottom:50px;
+    transition: box-shadow 2s, width 2s , margin-left 2s;
+    backdrop-filter: blur(15px);
+    z-index: 2;
 }
-section .text{
-    height: 300px;
-    width:80%;
-    padding: 10%; 
+section fieldset:hover{
 
-    font-size: large;
+     box-shadow:10px 10px 10px black; 
+    
+}
+
+/************encadrement du formulaire***********/
+section legend{
+    font-family:'chakra', sans-serif ;
+}
+section p{
+    font-family: 'chakra';
+    width:70%;
+    text-align: justify;
+    margin-left:15%;
+    color: rgb(9, 1, 44);
+    font-weight: bold;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    transition: margin-left 2s , width 2s;
+}
+ section label{
+    border-bottom: 1px solid black;
+} 
+section form{
+    font-family: 'chakra';
+    margin-left:15px;
+    margin-top:30px;
+}
+section select , input{
     font-family: 'chakra';
 
-    transition:width 2s ,height 2s,font-size 2s , padding 2s; 
-    text-align: justify;
 }
-section .image{
-     margin-left: 200px;
-     padding: 50px;
-     transition:  padding 2s, margin-left2s ;  
+section .btn{
+    text-align: right;
+    margin-right:50%;
+    margin-top:25%;
+    
 }
-section img{
-    height: 300px;
-    width: 400px;
-    transition: height 2s, width 2s ;
+section .btn input{
+    padding: 20px;
+    background-color:rgb(2, 4, 46);
+    color: white;
+    margin-right:10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -192,47 +219,29 @@ footer{
 
 
 
+
 /********************************* 
 STYLE RESPONSIVE TABLETTE 
 ************************************/
  /*********logo*******/
- @media screen and (min-width:901px) and (max-width:1200px) {
+@media screen and (min-width:901px) and (max-width:1200px) {
     header .logo{
         font-size:40px;
     }
      /************fieldset de la section***********/
      section h1{
         margin-left:300px;
-}
-    section h2{
-        margin-left:350px;
     }
-    /*********div de sensibilisation*******/
-    section .content{
-        margin-left:25%; 
-       width: 500px;
-       height:630px;
-   }
-   section .text{
-       height: 300px;
-       width: 400px;
-       /* padding: 15px; */
-       font-size: 0.9em;
-       margin-left:9%;
-   }
-   section .image{
+    section fieldset{
         margin-left:25%;
-        padding:15px;
-       
-   }
-   section img{
-       height: 150px;
-       width: 200px;
-   }
+        margin-top:30px; 
+    }
+    section p{
+        margin-left:12%;
+        width:55%;
+    }
 }
-
-
-
+ /*********barre de navigation*******/
 
 
 
@@ -276,38 +285,16 @@ STYLE REPONSIVE SMART PHONE
         background-color: rgb(9, 9, 204);
         transition:background-color 2s ;
     }
-    /************titre h1 de la section***********/
+    /************fieldset de la section***********/
     section h1{
-        margin-left:10%;
-        margin-top:10%;
+        margin-left:9%;
     }
-    section h2{
-        margin-left:1%;
-        padding-bottom:5%;
+    section fieldset{
+        width:300px;
+        margin-left: 3%;
+        margin-top: 30px; 
     }
-
-    section .content{
-        height:800px ;
-        width: 300px;
-        margin-left:3%;
+    section p{
+        margin-left:7%;
     }
-    section .text{
-        /* height: 500px; */
-        width: 250px;
-        padding: 15px;
-        font-size: small;
-        margin-left:2%;
-        text-align: justify;
-    }
-    section .image{
-         margin-left:13%;
-         padding:15px;
-        
-    }
-    section img{
-        height: 150px;
-        width: 200px;
-    }
-    
         }
- 

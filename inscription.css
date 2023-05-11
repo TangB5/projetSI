@@ -155,7 +155,7 @@ section .btn input{
     padding: 10px;
     background-color:rgb(2, 4, 46);
     color: white;
-    margin-right:10px;
+    margin-right:0px;
     border-radius: 20px;
 }
 
