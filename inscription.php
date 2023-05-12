@@ -18,6 +18,7 @@
         <input type="checkbox" id="nav-mob">
          <ul> 
             <li><a href="#" class="active">inscription</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
             <!-- <li><a href="dossier.html">Dossier</a></li>
             <li><a href="operation.html">Operation</a></li>
             <li><a href="propos.html">A propos</a></li> -->
@@ -29,24 +30,24 @@
 <fieldset>
     <legend>VOS INFOS</legend>
     <div>
-    <form action="" method="post">
+    <form action="php/back.php" method="post">
 <label for="matricule" value="matricule">MATRICULE :</label>
-<input type="text" id="matricule" required="required"><br /><br />
+<input type="text" id="matricule" name="matricule" required="required"><br /><br />
 
 <label for="nom" value="nom">NOM :</label>
-<input type="text" id="nom" required="required"><br /><br />
+<input type="text" id="nom" name="nom" required="required"><br /><br />
 
 <label for="prenom" value="prenom">PRENOM :</label>
-<input type="text" id="prenom" required="required"><br /><br />
+<input type="text" id="prenom" name="prenom" required="required"><br /><br />
 
 <label for="email" value="email">E-MAIL :</label>
-<input type="email" id="email" required="required"><br /><br />
+<input type="email" id="email" name="email" required="required"><br /><br />
 
 <label for="numero" value="numero">NUMERO :</label>
-<input type="number" id="numero" required="required"><br /><br />
+<input type="number" id="numero" name="numero" required="required"><br /><br />
 
 <label for="fonction" value="fonction">FONCTION :</label>
-<input type="fonctio" id="fonction" required="required"><br /><br />
+<input type="fonctio" id="fonction" name="fonction" required="required"><br /><br />
 
 DEPARTEMENT :<select name="fonction" id="">
     <option value="">
@@ -58,7 +59,7 @@ DEPARTEMENT :<select name="fonction" id="">
 </select><br /><br />
 
 <div class="btn">
-<input type="submit" value="LOGIN" class="btnENVOI">
+<input type="submit" value="ENVOYER" name="envoyer" class="btnENVOI">
 
 </div>
 
