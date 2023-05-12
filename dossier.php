@@ -19,12 +19,12 @@
        <label for="nav-mob" class="nav-mob"> &#9776; </label> 
        <input type="checkbox" id="nav-mob">
         <ul> 
-           <li><a href="accueil.html" >Accueil</a></li>
+           <li><a href="accueil.php" >Accueil</a></li>
            <li><a href="" class="active"><div class="dropdown">
             Operations
             <div class="dropdown-content">
-              <a href="operation.html">ajouter un item</a>
-              <a href="dossier.html" class="active">consulter</a>
+              <a href="operation.php">ajouter un item</a>
+              <a href="dossier.php" class="active">consulter</a>
             </div>
           </div>
       </a></li>
@@ -73,6 +73,7 @@
                 <a href="document.html"><img src="doss.jpg" alt="error"></a>
                 <p>dossiers</p>
             </div>
+            
         </div>
 
 
@@ -118,6 +119,33 @@
                 <p>dossiers</p>
             </div>
         </div>
+        <div class="box">
+        <?php
+                $bd= new PDO('mysql:host=localhost;dbname=archivage', 'root', '');
+                if(isset($_POST['envoyer'])){
+                    $type= $_POST['document'];
+                    $dossier= $_POST['dossier'];
+                    $armoire= $_POST['armoire'];
+                    $matricule= $_POST['matricule'];
+
+                    $sql= ('INSERT INTO `dossier`(`id_dossier`, /*`id_type`, */`id_armoire`, `matricule`) VALUES (:id_dossier, /*:id_type, */:id_armoire, :matricule)');
+                    $trans=$bd->prepare($sql);
+                    $trans->bindparam(':id_dossier', $dossier);
+                    //$trans->bindparam(':id_type', $type);
+                    $trans->bindparam(':id_armoire', $armoire);
+                    $trans->bindparam(':matricule', $matricule);
+   
+                    $trans->execute();?>
+
+                    <div class="sousbox">
+                        <a href="document.html"><img src="doss.jpg" alt="error"></a>
+                        <p><?php echo 'dossier'.$dossier; ?></p>
+                   </div>
+                <?php
+                }
+                ?>
+        </div>
+              
     </div>
 </section>
    
