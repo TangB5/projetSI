@@ -1,0 +1,255 @@
+@import url('https://googleapis.com/css?family=Anton');
+@import url('https://googleapis.com/css?family=Nosifer');
+
+/********************************* 
+STYLE GENERALE 
+************************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Nosifer';
+    src: url(police/Nosifer.ttf);
+}
+
+@font-face {
+    font-family: 'chakra';
+    src: url(police/Chakra.ttf);
+ }
+
+@font-face {
+    font-family: 'Bungee';
+    src: url(police/Bungee.ttf);
+ }
+body{
+    background:url(pc.jpg) no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/********************************* 
+STYLE HEADER 
+************************************/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(2, 4, 46);
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+header .logo{
+   font-weight: none;
+    font-size: xx-large;
+    font-family: 'Bungee',cursive;
+    color: white;
+    padding-left: 9px;
+transition:  font-size 0.5s;
+}
+
+
+/********************************* 
+STYLE BARE DE NAVIGATION
+************************************/
+nav{
+    width:100%;
+    height:20px; 
+    position: absolute; 
+     top:2px ;
+}
+nav ul{
+    float: right;
+  
+}
+nav li{
+   display: inline-block;
+    list-style-type: none;
+    padding: 20px;  
+}
+nav a{
+    color: white;
+    font-family:impact, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color:aqua;
+    border-top: 4px solid darkcyan;
+    border-bottom:4px solid darkcyan ;
+}
+nav .active{
+    color:aqua;
+    border-top: 4px solid darkcyan;
+    border-bottom:4px solid darkcyan ;
+}
+  input[type=checkbox], .nav-mob{
+     display: none;  
+    
+}  
+ input[type=checkbox]:checked ~ ul{
+    display: block;
+  position: relative;
+
+}  
+
+
+
+
+/********************************* 
+STYLE SECTION 
+************************************/
+section h1{
+    margin-top: 50px;
+    font-family: 'Nosifer',sans-serif;
+    color:rgb(3, 8, 92) ;
+    margin-left:30%;
+    transition:margin-left 2s ;
+}
+/************fielset de la section***********/
+
+section fieldset{
+    width: 600px;
+    height: 400px;
+    background-color: hsla(231, 9%, 71%, 0.678);  
+    border-radius: 25px;
+    box-shadow:1px 1px 10px black; 
+    margin-top:30px;
+    margin-left:25%;
+    margin-bottom:50px;
+    transition: box-shadow 2s, width 2s , margin-left 2s;
+    backdrop-filter: blur(15px);
+    z-index: 2;
+}
+section fieldset:hover{
+
+     box-shadow:10px 10px 10px black; 
+    
+}
+
+/************encadrement du formulaire***********/
+section legend{
+    font-family:'chakra', sans-serif ;
+}
+ section label{
+    border-bottom: 1px solid black;
+} 
+section form{
+    font-family: 'chakra';
+    margin-left:15px;
+    margin-top:30px;
+}
+section select , input{
+    font-family: 'chakra';
+
+}
+section .btn{
+    text-align: right;
+    margin-right:25px;
+    
+}
+section .btn input{
+    padding: 10px;
+    background-color:rgb(2, 4, 46);
+    color: white;
+    margin-right:0px;
+    border-radius: 20px;
+}
+
+
+
+/********************************* 
+STYLE FOOTER
+************************************/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(2, 4, 46) ;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    border-top: 2px solid black;
+    font-style: italic;
+    margin: 0px;
+}
+
+
+
+
+
+
+/********************************* 
+STYLE RESPONSIVE TABLETTE 
+************************************/
+ /*********logo*******/
+@media screen and (min-width:901px) and (max-width:1200px) {
+    header .logo{
+        font-size:40px;
+    }
+     /************fieldset de la section***********/
+     section h1{
+        margin-left:300px;
+    }
+    section fieldset{
+        margin-left:25%;
+        margin-top:30px; 
+    }
+}
+ /*********barre de navigation*******/
+
+
+
+/********************************* 
+STYLE REPONSIVE SMART PHONE
+************************************/
+@media screen and (max-width:900px) {
+    /*********logo*******/
+    header .logo{
+        font-size:20px;
+        text-shadow: 0px 0px 10px black;
+        color: white ;
+        
+    }
+    
+    /*********barre de navigation*******/
+ nav{
+        text-align: center;
+    } 
+    nav ul{
+        display: none;
+     }
+     .nav-mob{
+        display: block;
+        color: white;
+        font-size: xx-large;
+     }
+     nav li{
+        width: 100vw;
+        background-color: rgb(3, 3, 82);
+        text-align: center;
+        border-bottom: 1px solid wheat;
+        position: relative;
+       z-index: 1;
+     }
+     nav a{
+        position: relative;
+         left:30px;
+     }
+     nav li:hover{
+        background-color: rgb(9, 9, 204);
+        transition:background-color 2s ;
+    }
+    /************fieldset de la section***********/
+    section h1{
+        margin-left:9%;
+    }
+    section fieldset{
+        width:300px;
+        margin-left: 3%;
+        margin-top: 30px; 
+    }
+        }
+ 
