@@ -93,35 +93,27 @@ nav .active{
 
 }  
 
+/*****************************
+ menu deroulant du nav bar 
+****************************/
 
-/* Style the dropdown content */
-.dropdown-content {
-    display: none;
+.sous-menu{
+    display:none;  
     position: absolute;
-    z-index: 1;
-  }
-  
-  /* Show the dropdown content when the dropdown button is clicked */
-  .dropdown:hover .dropdown-content {
+    top: 100%;
+    right: 0;
+    padding:0px;
+    margin: 0px;
+}
+.sous-menu li{
+    float: none;
+}
+.sous-menu li a{
+    padding:5px;
+}
+ li:hover .sous-menu{
     display: block;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-
-
-
+ }
 
 
 
@@ -285,6 +277,29 @@ STYLE REPONSIVE SMART PHONE
         background-color: rgb(9, 9, 204);
         transition:background-color 2s ;
     }
+
+
+/*****************************
+ menu deroulant du nav bar 
+****************************/
+.sous-menu{
+    position: static;
+    display: none;
+}
+
+
+
+
+
+
+/* Style the dropdown content */
+.dropdown-content  a{
+    display: block;
+  }
+  
+
+
+
     /************fieldset de la section***********/
     section h1{
         margin-left:9%;

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+ HEAD
 body{
     background-color: cyan;
 }
-=======
+
 /* Style the dropdown button */
 .dropbtn {
     background-color: #4CAF50;
@@ -43,4 +43,98 @@ body{
     position: relative;
     display: inline-block;
   }
->>>>>>> c47f5fa (modification de l application pour ajoute l option ajouter et consulter)
+ /* c47f5fa (modification de l application pour ajoute l option ajouter et consulter) */
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+nav label {
+  display: none;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  position: relative;
+}
+nav a {
+  display: block;
+  padding: 10px;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul ul li {
+  width: 200px;
+  border-bottom: 1px solid #666;
+}
+nav ul ul li:last-child {
+  border-bottom: none;
+}
+nav ul ul li a {
+  display: block;
+  padding: 10px;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+@media (max-width: 768px) {
+  nav label {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: none;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+  nav ul li:hover > ul {
+    display: none;
+  }
+}
+.sous-menu{
+  display: inline-block; 
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  background-color: blueviolet;
+}
+
+.menu li{
+  display:static;
+}
+.menu li:hover .sous-menu{
+  display: block;
+}
