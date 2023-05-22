@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        h1, h2{
+            color: #444;
+        }
+        h3{
+            color: #999;
+        }
+        .part1{
+            position: fixed;
+            background: blue;
+            width: 20vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .tp1{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .part1 li{
+            font-size: 24px;
+            padding: 10px 40px;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+        .part1 li:hover{
+            background-color: white;
+            color: #f05462;
+        }
+        .container{
+            position: absolute;
+            right: 0;
+            width: 80vw;
+            height: 100vh;
+            background: #f1f1f1;
+        }
+        .container .header{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80vw;
+            height: 10vh;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .container .nav{
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+        .nav .search{
+            flex: 3;
+            display: flex;
+            justify-content: center;
+        }
+        .search input{
+            border: none;
+            background: #f1f1f1;
+            padding: 10px;
+            width: 50%;
+        }
+        .tp1 h1{
+            color: white;
+        }
+        
+        .btn{
+            background-color: #f05462;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 10px;
+            border-bottom: 2px solid #999;
+        }
+        table{
+            padding: 10px;
+        }
+        th, td{
+            text-align: left;
+            padding: 8px;
+        }
+        .btn:hover{
+            color: #f05462;
+            background: white;
+            padding: 3px 8px;
+            border: 2px solid #f05462;
+            
+
+        }
+        .search button{
+            width: 40px;
+            height: 40px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav .user{
+            flex: 1;
+        }
+        .content{
+            position: relative;
+            margin-top: 10vh;
+            min-height: 90vh;
+        }
+        .content .cards{
+            padding: 20px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .cards .card{
+            width: 250px;
+            height: 150px;
+            background: linear-gradient(white, #f05462);
+            margin: 20px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .content-2{
+            min-height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .rpay{
+            min-height: 50vh;
+            flex: 5;
+            background: white;
+            margin: 0 25px 25px 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+        }
+        .newstudents{
+            min-height: 50vh;
+            flex: 2;
+            background: white;
+            margin: 0 25px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .duree{
+            background-color: blue;
+            height: 100%;
+        }
+        p{
+            font-weight: bold;
+            font-size: 19px;
+            padding: 10px;
+        }
+        span{
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="part1">
+        <div class="tp1">
+            <h1>FSA</h1>
+        </div>
+        <ul>
+            <li>Dashboard</li>
+            <li>Dossiers</li>
+            <li>Catégories</li>
+            <li>Document</li>
+            <li>stockage</li>
+            <li>Help</li>
+            <li>Setting</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="search..">
+                    <button type="submit">Search</button>
+                </div>
+                <!--<div class="user">
+                    <a href="#" class="btn">Add New</a>
+                </div>-->
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>250</h1>
+                        <h3>Fichiers</h3>
+                    </div>
+                    <div class="icon-case">
+                        <!--img-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>1750</h1>
+                        <h3>Go Alloués</h3>
+                    </div>
+                    <div class="icon-case">
+                        <!--img-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>3100</h1>
+                        <h3>users</h3>
+                        <h1>8800</h1>
+                        <h3>Operations</h3>
+                    </div>
+                    <div class="icon-case">
+                        <!--img-->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="content-2">
+                <div class="rpay">
+                    <div class="title">
+                        <h2>Consultations recentes</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Taille</th>
+                            <th>Fichiers</th>
+                            <th>option</th>
+                        </tr>
+                        <tr>
+                            <td>Dossier 12</td>
+                            <td>12 Go</td>
+                            <td>25 </td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dossier 4</td>
+                            <td>2 Go</td>
+                            <td>14</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dossier 1</td>
+                            <td>975 MO</td>
+                            <td>3</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dossier 6</td>
+                            <td>4 Go</td>
+                            <td>10</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dossier 2</td>
+                            <td>56 Go</td>
+                            <td>102</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="newstudents">
+                    <div class="title">
+                        <h2>Infos supplementaires</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <div class="duree">
+                        <p>Duree legale d'archivage: <span>6ans</span> </p>
+                        <p>Structure de stockage: <span>Amoires de classement</span> </p>
+                        <p>Ratio d'incription/an: <span>35%</span></p>
+                        <p>gain d'espace/an: <span>8%</span></p>
+                        <p>Espace total: <span>10 To</span></p>
+                    </div>
+                <!---<table>
+                        <tr>
+                            <th>Name</th>
+                            <th>school</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>nom1 pre</td>
+                            <td>nom1 pre</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>nom1 pre</td>
+                            <td>nom1 pre</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>nom1 pre</td>
+                            <td>nom1 pre</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>nom1 pre</td>
+                            <td>nom1 pre</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>nom1 pre</td>
+                            <td>nom1 pre</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

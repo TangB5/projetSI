@@ -18,6 +18,7 @@
         <input type="checkbox" id="nav-mob">
          <ul> 
             <li><a href="#" class="active">Accueil</a></li>
+<<<<<<< HEAD:accueil.html
             <li><a href="" >
                 Operations <span>&#9662;</span></a>
                 <ul class="sous-menu"> 
@@ -25,6 +26,16 @@
                   <li><a href="dossier.html">consulter</a></li>
                 </ul>
                 </li>
+=======
+            <li><a href=""><div class="dropdown">
+                Operations
+                <div class="dropdown-content">
+                  <a href="accueil.php">ajouter un item</a>
+                  <a href="accueil.php">consulter</a>
+                </div>
+              </div>
+          </a></li>
+>>>>>>> b2907f82813dd46b3718cf5b6071d84cb7b84e4c:accueil.php
             <li><a href="propos.html">A propos</a></li>
         </ul>
     </nav>
@@ -47,13 +58,13 @@ Merci d'utiliser l'application d'archivage de documents du département Math/Inf
             <fieldset>
                 <legend>VOS INFOS</legend>
                 <div>
-                <form action="" method="post">
+                <form action="php/back2.php" method="post">
             <label for="matricule" value="matricule">MATRICULE :</label>
-            <input type="text" id="matricule" required="required"><br /><br />
+            <input type="text" id="matricule" name="matricule" required="required"><br /><br />
 
 
             <label for="fonction" value="fonction">FONCTION :</label>
-<input type="fonctio" id="fonction" required="required"><br /><br />
+<input type="fonctio" id="fonction" name="fontion" required="required"><br /><br />
 
 DEPARTEMENT :<select name="fonction" id="">
     <option value="">
@@ -66,7 +77,7 @@ DEPARTEMENT :<select name="fonction" id="">
 
 
 <div class="btn">
-    <input type="submit" value="LOGIN" class="btnENVOI">
+    <input type="submit" value="LOGIN" name="login" class="btnENVOI">
     </div>
     
         </form>
